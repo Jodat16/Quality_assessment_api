@@ -11,3 +11,6 @@ docker run -d --name qualityassessmentapi-cont -p 8010:8010 qualityassessmentapi
 
 To login from our terminal into remote azure container registry(get credentails from access keys of the container registry)
 docker login <server> -u <username> -p <pass>   
+
+To build in remote registry
+docker build -t registryqualityassessmentapi.azurecr.io/qualityassessmentapi-image . 
