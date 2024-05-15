@@ -8,13 +8,15 @@ from datetime import datetime
 # To execute this API : uvicorn predict:app --reload --host 0.0.0.0 --port 8000
 # Loading CNN model
 try:
-    mobilenet_model = load_model('mobilenet_FYP_model.h5')    #only works with keras and tensorflow 2.15.0
+    mobilenet_model = load_model('model.h5')    #only works with keras and tensorflow 2.15.0
     print("model loaded.")
 except Exception as e:
     print("\n\n Error loading model: ", e)
 
 # func to predict class using CNN model
 def predict_class(image_arr):
+    mobilenet_model = load_model('model.h5') 
+    
     predictions = mobilenet_model.predict(image_arr) 
 
     # Get most likely class
