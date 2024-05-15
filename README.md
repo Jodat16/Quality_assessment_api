@@ -1,5 +1,6 @@
 # Quality_assessment_api
-
+## This is an opensource code for API endpoint, that leverages Computer Vision model to classify fruits and vegetables based on their quality.
+<br>
 Video link :
 https://www.youtube.com/watch?v=HyCO6nMdxC0
 
